@@ -99,9 +99,9 @@
                 <div class="user">
                     <a href="{{ url('/home') }}" class="btn cart">
                         <i class="fa fa-shopping-cart"></i>
-                        @if(auth()->user()->cart)
+                        {{--  @if(auth()->user()->cart)
                         <span>({{ auth()->user()->cart->details->count() }})</span>
-                        @endif
+                        @endif  --}}
                     </a>
                 </div>
             </div>
