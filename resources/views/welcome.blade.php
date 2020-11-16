@@ -148,8 +148,8 @@
                                        
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ url('/categories/'.$category->id) }}">
-                                            <?php $num = ($count+=1) ?>
-                                            <i class="fa fa-{{$icons[$num]}}"></i>
+                                            {{--  $num = ($count+=1) 
+                                            <i class="fa fa-{{$icons[$num]}}"></i> --}}
                                             
                                             
                                             {{ $category->name }}</a>
