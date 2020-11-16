@@ -141,15 +141,15 @@
                             <nav class="navbar bg-light">
                                 <ul class="navbar-nav">
                                     <?php
-                                    $icons = ['female', 'child', 'tshirt', 'mobile-alt', 'microchip'];
+                                    $icons = ['female', 'child', 'tshirt', 'mobile-alt', 'microchip', 'child', 'child'];
                                     $count = 0;
                                     ?>
                                     @foreach($categories as $category)
                                        
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ url('/categories/'.$category->id) }}">
-                                            {{--  $num = ($count+=1) 
-                                            <i class="fa fa-{{$icons[$num]}}"></i> --}}
+                                            
+                                            <i class="fa fa-{{$icons[$count+=1]}}"></i> 
                                             
                                             
                                             {{ $category->name }}</a>
