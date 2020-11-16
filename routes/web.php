@@ -24,6 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //WelcomeController users
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index']);
+Route::get('/categories/{id}', [App\Http\Controllers\CategoryController::class, 'show']);
+//Search
+Route::get('/search', [App\Http\Controllers\SearchController::class, 'show']);
 //ProductController
 Route::get('/products/{id}', [App\Http\Controllers\ProductController::class, 'show']);
 //CartDetailController
@@ -35,6 +38,7 @@ Route::post('/order', [App\Http\Controllers\CartController::class, 'update']);
 //Admin - Product
 Route::middleware(['admin'])->group(function(){
     Route::resource('/admin/products', App\Http\Controllers\Admin\ProductController::class);
+    Route::resource('/admin/categories', App\Http\Controllers\Admin\CategoryController::class);
     Route::get('/admin/products/{id}/images', [App\Http\Controllers\Admin\ImageController::class, 'index']);
     Route::post('/admin/products/{id}/images', [App\Http\Controllers\Admin\ImageController::class, 'store']);
     Route::delete('/admin/products/{id}/images', [App\Http\Controllers\Admin\ImageController::class, 'destroy']);

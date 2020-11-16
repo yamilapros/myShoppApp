@@ -72,8 +72,11 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="product-search">
-                                                <input type="email" value="Search">
-                                                <button><i class="fa fa-search"></i></button>
+                                                <form action="{{ url('/search') }}" method="GET">
+                                                    
+                                                    <input type="text" name="query" placeholder="Search">
+                                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -84,12 +87,9 @@
                                 <div class="product-item">
                                     <div class="product-title">
                                         <a href="{{ url('/products/'.$product->id) }}">{{ $product->name }}</a>
+                                        
                                         <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            <a href="">{{ $product->category_name }}</a>
                                         </div>
                                     </div>
                                     <div class="product-image">
@@ -137,24 +137,25 @@
                     <!-- Side Bar Start -->
                     <div class="col-lg-4 sidebar">
                         <div class="sidebar-widget category">
-                            <h2 class="title">Category</h2>
+                            <h2 class="title">Categorías</h2>
                             <nav class="navbar bg-light">
                                 <ul class="navbar-nav">
+                                    <?php
+                                    $icons = ['female', 'child', 'tshirt', 'mobile-alt', 'microchip'];
+                                    $count = 0;
+                                    ?>
+                                    @foreach($categories as $category)
+                                       
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-female"></i>Fashion & Beauty</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-child"></i>Kids & Babies Clothes</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men & Women Clothes</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Electronics & Accessories</a>
-                                    </li>
+                                        <a class="nav-link" href="{{ url('/categories/'.$category->id) }}">
+                                            
+                                            <i class="fa fa-{{$icons[$count+=1]}}"></i>
+                                            
+                                            
+                                            {{ $category->name }}</a>
+                                    </li> 
+                                    
+                                    @endforeach
                                 </ul>
                             </nav>
                         </div>
