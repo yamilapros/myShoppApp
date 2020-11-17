@@ -20,21 +20,21 @@
             <div class="col-md-6">
                 <div class="header-slider normal-slider">
                     <div class="header-slider-item">
-                        <img src="img/slider-1.jpg" alt="Slider Image" />
+                        <img src="shop/img/slider-1.jpg" alt="Slider Image" />
                         <div class="header-slider-caption">
                             <p>Some text goes here that describes the image</p>
                             <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
                         </div>
                     </div>
                     <div class="header-slider-item">
-                        <img src="img/slider-2.jpg" alt="Slider Image" />
+                        <img src="shop/img/slider-2.jpg" alt="Slider Image" />
                         <div class="header-slider-caption">
                             <p>Some text goes here that describes the image</p>
                             <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
                         </div>
                     </div>
                     <div class="header-slider-item">
-                        <img src="img/slider-3.jpg" alt="Slider Image" />
+                        <img src="shop/img/slider-3.jpg" alt="Slider Image" />
                         <div class="header-slider-caption">
                             <p>Some text goes here that describes the image</p>
                             <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
@@ -45,13 +45,13 @@
             <div class="col-md-6">
                 <div class="header-img">
                     <div class="img-item">
-                        <img src="img/category-1.jpg" />
+                        <img src="shop/img/category-1.jpg" />
                         <a class="img-text" href="">
                             <p>Some text goes here that describes the image</p>
                         </a>
                     </div>
                     <div class="img-item">
-                        <img src="img/category-2.jpg" />
+                        <img src="shop/img/category-2.jpg" />
                         <a class="img-text" href="">
                             <p>Some text goes here that describes the image</p>
                         </a>
@@ -170,12 +170,12 @@
         <div class="brand">
             <div class="container-fluid">
                 <div class="brand-slider">
-                    <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
+                    <div class="brand-item"><img src="shop/img/brand-1.png" alt=""></div>
+                    <div class="brand-item"><img src="shop/img/brand-2.png" alt=""></div>
+                    <div class="brand-item"><img src="shop/img/brand-3.png" alt=""></div>
+                    <div class="brand-item"><img src="shop/img/brand-4.png" alt=""></div>
+                    <div class="brand-item"><img src="shop/img/brand-5.png" alt=""></div>
+                    <div class="brand-item"><img src="shop/img/brand-6.png" alt=""></div>
                 </div>
             </div>
         </div>
