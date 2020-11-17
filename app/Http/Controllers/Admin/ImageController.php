@@ -27,7 +27,7 @@ class ImageController extends Controller
             //Renombrar el archivo image
             $file = $request->file('image');
             //Path
-            $path = public_path() . '/images/products';
+            $path = public_path('images/products');
             //Nombre único
             $filename = time() . "." . $file->extension();
             //Mover
